@@ -26,7 +26,10 @@ document.getElementById('donation-btn-1').addEventListener('click', function(){
     // let noakhaliInput = parseFloat(document.getElementById('noakhali-input-donation').value);
     // let noakhaliDonation = parseFloat(document.getElementById('noakhali-donation').innerText);  
     // let extraMoney = parseFloat(document.getElementById('extra-money').innerText);
+    let changeValue = document.getElementById('noakhali-input-donation');
+    changeValue.value = ''
     
+
     if(noakhaliInput <= 0 || isNaN(noakhaliInput)){
         alert('Invalid Donation Amount');
         return ;
@@ -56,12 +59,13 @@ document.getElementById('donation-btn-1').addEventListener('click', function(){
 
 })
 document.getElementById('donation-btn-2').addEventListener('click', function(){
-
-    
     
     let feniInput = allValue('feni-input-donation');
     let feniDonation = allInnerText('feni-donation') ;
     let extraMoney = extraMoneyInnerText('extra-money');
+
+    let changeValue = document.getElementById('feni-input-donation');
+    changeValue.value = ''
 
     if(feniInput <= 0 || isNaN(feniInput)){
         alert('Invalid Donation Amount');
@@ -96,6 +100,9 @@ document.getElementById('donation-btn-3').addEventListener('click', function(){
     let quotaDonation = allInnerText('quota-donation') 
     let extraMoney = extraMoneyInnerText('extra-money');
 
+    let changeValue = document.getElementById('quota-input-donation');
+    changeValue.value = ''
+    
     if(quotaInput <= 0 || isNaN(quotaInput)){
         alert('Invalid Donation Amount');
         return ;
