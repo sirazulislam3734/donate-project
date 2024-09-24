@@ -17,3 +17,12 @@ function extraMoneyInnerText (id){
     let extraMoneyerInnerText = parseFloat(document.getElementById(id).innerText);
     return extraMoneyerInnerText;
 }
+
+// function showGetId(id){
+//     document.getElementById('history-list').classList.add('hidden');
+//     document.getElementById('donation-list').classList.add('hidden');
+//     document.getElementById('donation').classList.add('bg-lime-300');
+//     document.getElementById('history').classList.add('bg-lime-300');
+
+//     document.getElementById(id).classList.remove('hidden');
+// }
