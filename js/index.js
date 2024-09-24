@@ -35,6 +35,9 @@ document.getElementById('donation-btn-1').addEventListener('click', function(){
         alert('Invalid Donation Amount')
         return 
     }
+    else{
+        alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people')
+    }
     
 
     let totalDonation = noakhaliInput + noakhaliDonation;
@@ -71,6 +74,9 @@ document.getElementById('donation-btn-2').addEventListener('click', function(){
         alert('Invalid Donation Amount')
         return 
     }
+    else{
+        alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people')
+    }
     
 
     let totalDonation = feniInput + feniDonation;
@@ -104,6 +110,10 @@ document.getElementById('donation-btn-3').addEventListener('click', function(){
     if(quotaInput < 0){
         alert('Invalid Donation Amount') 
         return ;
+    }
+    else{
+        alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people');
+        return 
     }
 
     
