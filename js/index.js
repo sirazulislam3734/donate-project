@@ -27,19 +27,16 @@ document.getElementById('donation-btn-1').addEventListener('click', function(){
     // let noakhaliDonation = parseFloat(document.getElementById('noakhali-donation').innerText);  
     // let extraMoney = parseFloat(document.getElementById('extra-money').innerText);
     
-    if(isNaN(noakhaliInput)){
+    if(noakhaliInput <= 0 || isNaN(noakhaliInput)){
         alert('Invalid Donation Amount');
         return ;
-    }
-    if(noakhaliInput < 0){
-        alert('Invalid Donation Amount')
-        return 
     }
     else{
         alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people')
     }
     
-
+    
+ 
     let totalDonation = noakhaliInput + noakhaliDonation;
     let newDonationMoney = extraMoney - noakhaliInput;
 
@@ -66,16 +63,12 @@ document.getElementById('donation-btn-2').addEventListener('click', function(){
     let feniDonation = allInnerText('feni-donation') ;
     let extraMoney = extraMoneyInnerText('extra-money');
 
-    if(isNaN(feniInput)){
+    if(feniInput <= 0 || isNaN(feniInput)){
         alert('Invalid Donation Amount');
         return ;
     }
-    if(feniInput < 0){
-        alert('Invalid Donation Amount')
-        return 
-    }
     else{
-        alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people')
+        alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people');
     }
     
 
@@ -103,17 +96,13 @@ document.getElementById('donation-btn-3').addEventListener('click', function(){
     let quotaDonation = allInnerText('quota-donation') 
     let extraMoney = extraMoneyInnerText('extra-money');
 
-    if(isNaN(quotaInput) ){
+    if(quotaInput <= 0 || isNaN(quotaInput)){
         alert('Invalid Donation Amount');
-        return ;
-    }
-    if(quotaInput < 0){
-        alert('Invalid Donation Amount') 
         return ;
     }
     else{
         alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people');
-        return 
+        
     }
 
     
