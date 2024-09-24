@@ -26,36 +26,36 @@
 <body class="font">
     <main class="w-11/12  mx-auto relative">
         <section class="w-full backdrop-blur-xl fixed  left-0 right-0">
-            <nav class="bg-orange-50 px-28 pt-4 pb-8">
+            <nav class="bg-orange-50 lg:px-28 pt-4 pb-8">
                 <ul class="flex justify-between items-center">
-                    <li><button id="blog" class="btn font-bold bg-lime-300 px-8">Blog</button></li>
-                    <li class="font-bold flex justify-center items-center gap-4">
-                        <img src="assets/logo.png" alt=""><span class="text-2xl">Donate Bangladesh</span></li>
-                    <li class="font-semibold flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span id="extra-money">10000 BDT</span></li>
+                    <li><button id="blog" class="btn font-bold bg-lime-300 lg:ml-0 ml-3 lg:mr-0 mr-3 px-6">Blog</button></li>
+                    <li class="font-bold flex justify-center items-center lg:gap-4 gap-2">
+                        <img src="assets/logo.png" alt="" class="w-10"><span class="lg:text-2xl text-sm w-28">Donate Bangladesh</span></li>
+                    <li class="font-semibold flex justify-center items-center lg:gap-2 gap-1 -ml-7 mr-2"><img src="assets/coin.png" alt="" class=""> <span id="extra-money" class="text-xs whitespace-nowrap">10000 BDT</span></li>
                 </ul>
               </nav>
         
               <div class="text-center mt-16 mb-6">
-                <button id="donation" class="btn px-12 mr-2 text-lg">Donation</button>
-                <button id="history" class="btn px-10  ml-2 text-lg">history</button>
+                <button id="donation" class="btn px-12 mr-2 lg:text-lg">Donation</button>
+                <button id="history" class="btn px-12  ml-2 lg:text-lg">history</button>
               </div>
           </section>
           <section class="h-56">
           </section>
 
-      <section id="donation-list" class="mb-28 mx-16 mt-12 space-y-4">
-        <div class="lg:flex p-6 gap-4 border rounded-lg">
-            <div class="w-1/2 h-full">
+      <section id="donation-list" class="mb-28 lg:mx-16 mx-1 lg:mt-12 mt-6 space-y-3 lg:space-y-4">
+        <div class="lg:flex lg:p-6 p-3 space-y-3 lg:gap-4 border rounded-lg">
+            <div class="lg:w-1/2 lg:h-full">
                 <img src="assets/noakhali.png" alt="" class="w-full h-full">
             </div>
-            <div class="w-1/2">
-                <div class="bg-stone-200 py-3 px-6 rounded-lg mb-3 w-40 flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""><span id="noakhali-donation">5000 BDT</span></div>
-            <h3 class="font-bold text-2xl mb-5">Donate for Flood at Noakhali, Bangladesh</h3>
-            <p class="text-xl mb-7">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <div class="lg:w-1/2">
+                <div class="bg-stone-200 py-3 lg:px-6 px-3 rounded-lg mb-3 lg:w-40 w-36 flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""><span id="noakhali-donation" class="">5000 BDT</span></div>
+            <h3 class="font-bold lg:text-2xl mb-5 text-xl">Donate for Flood at Noakhali, Bangladesh</h3>
+            <p class="lg:text-xl lg:mb-7 mb-4">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
             <input id="noakhali-input-donation" type="text" class="p-4 border rounded-xl w-full mb-4" name="" id="" placeholder="Write Donation Amount">
             <br>
             <!-- Open the modal using ID.showModal() method -->
-            <button id="donation-btn-1" class="btn w-full bg-lime-300 font-bold text-lg mt-5" onclick="my_modal_1.showModal()">Donate Now</button>
+            <button id="donation-btn-1" class="btn w-full bg-lime-300 font-bold text-lg lg:mt-5 mt-2" onclick="my_modal_1.showModal()">Donate Now</button>
      <dialog id="my_modal_1" class="modal">
      <div class="modal-box">
     <h3 class="text-3xl font-bold text-center">Congrates!</h3>
@@ -63,23 +63,23 @@
     <p class="py-4 text-center">You have Donated for Humankind</p>
     <h3 class="text-xl font-bold text-center mb-4">Successfully</h3>
     <form method="dialog">
-        <button class="btn ml-36">Close confirmation</button>
+        <button class="btn lg:ml-36 ml-30">Close confirmation</button>
        </form>
       </div>
      </dialog>
             </div>
         </div>
-        <div class="lg:flex p-6 gap-4 border rounded-lg">
-            <div class="w-1/2 h-[450px]">
+        <div class="lg:flex lg:p-6 p-3 space-y-3 lg:gap-4 border rounded-lg">
+            <div class="lg:w-1/2 lg:h-[450px]">
                 <img src="assets/feni.png" alt="" class="w-full h-full">
             </div>
-            <div class="w-1/2">
-                <p class="bg-stone-200 py-3 px-6 rounded-lg mb-3 w-40 flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span id="feni-donation">5000 BDT</span></p>
-            <h3 class="font-bold text-2xl mb-4">Donate for Flood Relief in Feni,Bangladesh</h3>
-            <p class="text-xl mb-7">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="feni-input-donation" type="text" class="p-4 border rounded-xl w-full mb-5" name="" id="" placeholder="Write Donation Amount">
+            <div class="lg:w-1/2">
+                <p class="bg-stone-200 py-3 lg:px-6 px-3 rounded-lg mb-3 lg:w-40 w-36 flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span id="feni-donation">5000 BDT</span></p>
+            <h3 class="font-bold text-xl lg:text-2xl lg:mb-4 mb-2">Donate for Flood Relief in Feni,Bangladesh</h3>
+            <p class="lg:text-xl mb-4 lg:mb-7">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <input id="feni-input-donation" type="text" class="p-4 border rounded-xl w-full lg:mb-5 mb-3" name="" id="" placeholder="Write Donation Amount">
             <br>
-            <button id="donation-btn-2" class="btn w-full bg-lime-300 font-bold text-lg mt-5" onclick="my_modal_2.showModal()">Donate Now</button>
+            <button id="donation-btn-2" class="btn w-full bg-lime-300 font-bold text-lg lg:mt-5 mt-2" onclick="my_modal_2.showModal()">Donate Now</button>
      <dialog id="my_modal_2" class="modal">
      <div class="modal-box">
     <h3 class="text-3xl font-bold text-center">Congrates!</h3>
@@ -93,18 +93,18 @@
      </dialog>
             </div>
         </div>
-        <div class="lg:flex p-6 gap-4 border rounded-lg">
-            <div class="w-1/2 h-[450px]">
+        <div class="lg:flex lg:p-6 p-3 space-y-3 lg:gap-4 border rounded-lg">
+            <div class="lg:w-1/2 lg:h-[450px]">
                 <img src="assets/quota-protest.png" alt="" class="w-full h-full">
             </div>
-            <div class="w-1/2">
-                <p class="bg-stone-200 py-3 px-6 rounded-lg mb-3 w-40 flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span id="quota-donation">5000 BDT</span></p>
-            <h3 class="font-bold text-2xl mb-5">Aid for Injured in the Quota Movement</h3>
-            <p class="text-xl mb-7">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-            <input id="quota-input-donation" type="text" class="p-4 border rounded-xl w-full mb-4" name="" id="" placeholder="Write Donation Amount">
+            <div class="lg:w-1/2">
+                <p class="bg-stone-200 py-3 lg:px-6 px-3 rounded-lg mb-3 lg:w-40 w-36 flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span id="quota-donation">5000 BDT</span></p>
+            <h3 class="font-bold text-xl lg:text-2xl lg:mb-5 mb-3">Aid for Injured in the Quota Movement</h3>
+            <p class="lg:text-xl lg:mb-7 mb-4">The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will help provide essential supplies and to those affected by this disaster. Every contribution, big or small, makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <input id="quota-input-donation" type="text" class="p-4 border rounded-xl w-full lg:mb-4 mb-2" name="" placeholder="Write Donation Amount">
             <br>
             <!-- You can open the modal using ID.showModal() method -->
-          <button id="donation-btn-3" class="btn w-full bg-lime-300 font-bold text-lg mt-5" onclick="my_modal_3.showModal()">Donate Now</button>
+          <button id="donation-btn-3" class="btn w-full bg-lime-300 font-bold text-lg lg:mt-5 mt-2" onclick="my_modal_3.showModal()">Donate Now</button>
      <dialog id="my_modal_3" class="modal">
      <div class="modal-box">
     <h3 class="text-3xl font-bold text-center">Congrates!</h3>
