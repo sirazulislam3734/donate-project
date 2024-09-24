@@ -1,5 +1,5 @@
 document.getElementById('blog').addEventListener('click', function(){
-    window.location.href ='/index-2.html';
+    window.location.href ='./index-2.html';
 })
 
 let donation = document.getElementById('donation');
