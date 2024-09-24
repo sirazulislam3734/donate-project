@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"> 
+ 
+     <title>Donate Project</title>
+ 
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+ 
+     <style>
+         .font{
+             font-family: "Lexend", sans-serif;
+         }
+     </style>
+ </head>
+ <body class="font">
+     <main class="w-11/12 mx-auto">
+       <section class="">
+         <nav class="bg-orange-50 px-28 pt-4 pb-8">
+             <ul class="flex justify-between items-center">
+                 <li><button id="home" class="btn font-bold bg-lime-300 px-8">Home</button></li>
+                 <li class="font-bold flex justify-center items-center gap-4">
+                     <img src="assets/logo.png" alt=""><span class="text-2xl">Donate Bangladesh</span></li>
+                 <li class="font-semibold flex justify-center items-center gap-2"><img src="assets/coin.png" alt=""> <span>10000 BDT</span></li>
+             </ul>
+           </nav>
+          
+        <div class="mx-20 mt-16">
+            <h1 class="text-6xl font-bold my-10 flex gap-3 items-center"><span>Important FAQ</span><img src="assets/Comment_balloon_question_mark-removebg-preview.png" class="w-16 h-16" alt=""> </h1>
+            <div class="collapse collapse-arrow bg-base-200 p-4 border">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p> The Document Object Model (DOM) is a programming interface for web documents .</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 p-4 border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>1. Using getElementById: The getElementById method allows you to select an element by its ID. ...
+                   2. Using getElementsByClassName: ...
+                    3. Using getElementsByTagName: ...
+                    4. Using querySelector: ...
+                    5. Using querySelectorAll: ...
+                    6. Changing the Text Content. ...
+                    7. Changing the HTML Content. ...
+                   8. Changing the Attribute Value.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 p-4 border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 p-4 border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>Manipulating Element Attributes
+                    If you want to change other attributes like id , href , or src , you can use the setAttribute() method.</p>
+                </div>
+              </div>
+        </div>   
+    </section>
+    </main>
+
+    <script src="js/index-2.js"></script>
+</body>
+</html>
