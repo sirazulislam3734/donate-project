@@ -32,7 +32,11 @@ document.getElementById('donation-btn-1').addEventListener('click', function(){
 
     if(noakhaliInput <= 0 || isNaN(noakhaliInput)){
         alert('Invalid Donation Amount');
+        document.getElementById('my_modal_1').classList.add('hidden');
         return ;
+    }
+    if( extraMoney < 0 ){
+        alert('Invalid Donation Amount');
     }
     else{
         alert('Congratulations sir we have received your donation, thank you so much for standing by the flood affected people')
@@ -50,8 +54,8 @@ document.getElementById('donation-btn-1').addEventListener('click', function(){
 
     let div = document.createElement('div');
     div.innerHTML = `
-     <p class="font-bold mb-2">${noakhaliInput} Donate for Flood at Noakhali, Bangladesh. </p>
-     <p>Date: ${new Date()} </p> 
+     <p class="font-bold p-2">${noakhaliInput} Donate for Flood at Noakhali, Bangladesh. </p>
+     <p class="bg-slate-50 p-2 rounded-lg pl-5">Date: ${new Date()} </p> 
     `
     div.classList.add('border')
     div.classList.add('my-style')
@@ -69,6 +73,7 @@ document.getElementById('donation-btn-2').addEventListener('click', function(){
 
     if(feniInput <= 0 || isNaN(feniInput)){
         alert('Invalid Donation Amount');
+        document.getElementById('my_modal_2').classList.add('hidden');
         return ;
     }
     else{
@@ -86,8 +91,8 @@ document.getElementById('donation-btn-2').addEventListener('click', function(){
 
     let div = document.createElement('div');
     div.innerHTML = `
-     <p class="font-bold mb-2">${feniInput} Donate for Flood Relief in Feni,Bangladesh. </p>
-     <p>Date: ${new Date()} </p> 
+     <p class="font-bold p-2">${feniInput} Donate for Flood Relief in Feni,Bangladesh. </p>
+     <p class="bg-slate-50 p-2 rounded-lg pl-5">Date: ${new Date()} </p> 
     `
     div.classList.add('border')
     div.classList.add('my-style')
@@ -105,6 +110,7 @@ document.getElementById('donation-btn-3').addEventListener('click', function(){
     
     if(quotaInput <= 0 || isNaN(quotaInput)){
         alert('Invalid Donation Amount');
+        document.getElementById('my_modal_3').classList.add('hidden');
         return ;
     }
     else{
@@ -124,8 +130,8 @@ document.getElementById('donation-btn-3').addEventListener('click', function(){
 
     let div = document.createElement('div');
     div.innerHTML = `
-     <p class="font-bold mb-2">${quotaInput} Aid for Injured in the Quota Movement. </p>
-     <p>Date: ${new Date()} </p> 
+     <p class="font-bold p-2">${quotaInput} Aid for Injured in the Quota Movement. </p>
+     <p class="bg-slate-50 p-2 rounded-lg pl-5">Date: ${new Date()} </p> 
     `
     div.classList.add('border')
     div.classList.add('my-style')
